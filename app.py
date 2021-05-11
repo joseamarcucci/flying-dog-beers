@@ -38,12 +38,7 @@ beer_layout = go.Layout(
 )
 
 beer_fig = go.Figure(data=beer_data, layout=beer_layout)
-import plotly.express as px
-from IPython.display import HTML
-df = pd.read_csv('https://docs.google.com/spreadsheets/d/1TwmMZYxiHzG6dPwxqTlVidEntqp9qDdxWAI9oIWyLqM/export?format=csv')
-fig = px.line(data_frame=df, x="UA", y="Tiempo", width=1000, height=800)
-fig.show()
-HTML(fig.to_html())
+
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
